@@ -1,10 +1,10 @@
 import React from "react" 
-import "./menuhorizontal.css"
+import "./Menuhorizontal.css"
 
 export default function Menu() {
     return (
         <div>
-            <div className="Menu">
+            <div className="menu">
                 <nav className="navMenu">
                     <ul>
                         <li> <a href="#inicio"> Nosso Canal </a> </li>
