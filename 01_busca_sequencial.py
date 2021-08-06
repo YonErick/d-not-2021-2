@@ -31,4 +31,6 @@ print(f"Número de elementos da lista: {len(primos)}")
 print(f"Posição de ERICK: {busca_sequencial(nomes, 'ERICK')}")
 print(f"Posição de ZULEICA: {busca_sequencial(nomes, 'ZULEICA')}")
 print(f"Posição de ORKUTILSON: {busca_sequencial(nomes, 'ORKUTILSON')}")
+
+busca = 'Orkutilson'
 print(f"Posição de {busca.upper()}: {busca_sequencial(nomes, busca.upper())}")
