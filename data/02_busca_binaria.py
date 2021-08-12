@@ -1,5 +1,5 @@
 from time import time
-from lista_nomes import nome
+from lista_nomes import nomes
 
 # Algoritimo de Busca Binária
 #
