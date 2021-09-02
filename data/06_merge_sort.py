@@ -5,10 +5,16 @@
 # Em seguida, usando a técnica de mesclagem (merge), "remonta" o vetor,
 # dessa vez com os elementos já em ordem.
 
+comps = 0
+divisoes = 0
+juncoes = 0
+
 def merge_sort(lista):
     """
         Função que implementa o algoritimo merge sort usando o método recursivo
     """
+
+    global comps, divisoes, juncoes
 
     print(f"Lista recebida: {lista}")
 
@@ -22,6 +28,8 @@ def merge_sort(lista):
     lista_esq = lista[:meio] # Do inicio ao meio - 1
     # Gera cópia da segunda metade da lista 
     lista_dir = lista[meio:] # Do meio ao fim 
+
+    divisoes += 1
 
     # Chamamos recursivamente a função para continuar
     # repartindo a lista em metades
@@ -44,6 +52,7 @@ def merge_sort(lista):
         else:
             ordenada.append(lista_dir[pos_dir])
             pos_dir += 1
+        comps += 1
 
     sobre = None    # A sobra da lista que ficou para trás
 
@@ -55,6 +64,7 @@ def merge_sort(lista):
     print(f'>>>> final ordenada: {ordenada  + sobra} ')
 
     # Retornamos a lista final ordenada, composta da ordenada + sobra
+    juncoes += 1
     return ordenada + sobra     # "Soma" de duas listas
 
 ##################################################################
@@ -83,5 +93,6 @@ fim = time()
 print(nomes_ord)
 print(f"Tempo: {fim - ini}")
 print(f"Pico de mémoria: {mem_pico / 1024 / 1024}MB ")
+print(f"Comparações: {comps}, Divisões {divisoes}, Junções {juncoes}  ")
 
 tracemalloc.stop()
