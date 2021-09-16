@@ -1,0 +1,20 @@
+.inicio, .cursos, .contatos, .parceiros, .missao, .sobre, .titulo, footer {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.inicio {
+    height: 90vh;
+    background-color: rgb(247, 162, 232, 220);
+}
+
+#confirmar {
+    margin: 6vh;
+}
+
+#logo {
+    width: 320px;
+    height: 160px;
+    align-items: center;
+}
+
