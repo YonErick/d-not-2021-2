@@ -24,7 +24,7 @@ def verif_fechamento(tipo_fecha, pos_fecha, dados_abre):
     # A pilha ficou vazia antes do térmmino da análise da expressão
     if dados_abre is None:
 
-    if dados_abre["tipo"] == tipo_fecha:
+    elif dados_abre["tipo"] == tipo_fecha:
         print(f"Símbolo tipo {tipo_fecha} aberto na posição {dados_abre['pos']} e na posição {pos_fecha}")
     else: # Tipos errados
         print(f"ERRO: símbolo de fechamento do tipo {tipo_fecha} encontrado na posição {pos_fecha}; esperado símbolo do tipo {dados_abre['tipo']}")
